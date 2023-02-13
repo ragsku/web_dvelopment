@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lcation.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Book a Table</h1>
+        <form method="post">
+            <!--label element, group the texts with the input element-->
+            <div>
+                <label for="booking_date">Boooking Date</label>
+                <input type="date" id="booking_date" name="bookng_date">
+            </div>
+            <div>
+                <label for="booking_people">Number of People</label>
+                <!--oninput="this.nextElementSibling.value = this.value" this small piece of js code will update the output element with the value of the slider when it changes-->
+                <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <lable for="booking_location">Location</lable>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="Downtown"></option>
+                    <option value="Uptown"></option>
+                </datalist>
+            </div>
+            <div>
+                <button type="submit">Book table</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+	    <!--footer will be used to display copyright information-->
+	    <p>Copyright Little Lemon</p>
+    </footer>
+</body>
+</html>
