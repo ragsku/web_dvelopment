@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lcation.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Book a Table</h1>
+        <form method="post">
+            <!--The fieldset element defines a group for the radio buttons. Without the fieldset elements, all radio buttons will belong to the same group-->
+            <!--label element, group the texts with the input element-->
+            <fieldset id="size">
+                <label>
+                    <input type="radio" value="2" name="size"> 2-person table
+                </label>
+                <label>
+                    <input type="radio" value="4" name="size" checked> 4-person table
+                </label>
+                <label>
+                    <input type="radio" value="6" name="size"> 6-person table
+                </label>   
+            </fieldset>
+            <fieldset id="location">
+                <label>
+                    <input type="radio" value="indoors" name="location" checked> indoors
+                </label>
+                <label>
+                    <input type="radio" value="outdoors" name="location"> outdoors
+                </label>           
+            </fieldset>
+            <button type="submit">Book table</button>
+        </form>
+    </main>
+    <footer>
+	    <!--footer will be used to display copyright information-->
+	    <p>Copyright Little Lemon</p>
+    </footer>
+</body>
+</html>
